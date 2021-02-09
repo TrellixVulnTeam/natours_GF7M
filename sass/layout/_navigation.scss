@@ -31,7 +31,6 @@
         background-image: radial-gradient($color-primary-light , $color-primary-dark);
         z-index: 1000;
 
-        // transition: transform .8s;
         transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         @include respond(tab-port){
@@ -44,23 +43,15 @@
             right: 3.5rem;
         }
     
-        //  transform:scale(80);
     }
     &__nav {
         height: 100vh;
-        // width: 100%;
         position: fixed;
         top:0;
-        // could also say left since it is full size
-        // right:0;
         left: 0;
-        // background-color: orangered;
         z-index: 1500;
-        // with this only the mouse becomes hand but adding width will make them go
         opacity: 0;
         width: 0;
-        // transition: all .8s;
-        // easings.net has more functions to use
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     &__list {
@@ -68,14 +59,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        // could also create a mixin for this 3 lines of code above
-        
         list-style: none;
         text-align:center;
         width: 100%;
-
-
     }
+
     &__item {
         margin: 1rem;
     }
@@ -83,7 +71,6 @@
 
         &:link,
         &:visited {
-            // padding wasnt working cuz missed this
         display: inline-block;
 
         font-size: 3rem;
@@ -94,7 +81,6 @@
 
         background-image: linear-gradient(120deg , transparent 0% , transparent 50%, $color-white 50%);
         padding: 1rem 2rem;
-        // by increasing this number the orange red color will increase 
         background-size: 220%;
         transition: all .4s;
         
@@ -144,8 +130,6 @@
                 left: 0;
             }
             &::before {top: -.8rem;}
-            // transform-origin: right or left will cause the origin of rotation
-            // if not specified it will be center
             &::after {top: .8rem;}
         }
 

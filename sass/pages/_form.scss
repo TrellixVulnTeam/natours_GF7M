@@ -50,9 +50,7 @@
         transition: all .3s;
 
     }
-// to choose the sibling, that is after input
     &__input:placeholder-shown + &__label{
-        // we have both so that we can animate it
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);

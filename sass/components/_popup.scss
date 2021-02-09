@@ -7,12 +7,10 @@
     background-color: rgba($color-black, .8);
     z-index: 9999;
 
-    // display: none; //will not be able to animate it
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
     
-// graceful degredation, ( filter and vis not supported in chrome , webkit is for safari )
     @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter:blur(10px)){
     -webkit-backdrop-filter: blur(10px) ;
     backdrop-filter: blur(10px);
@@ -28,27 +26,21 @@
     &__content{
         @include absCenter;
         width: 75%;
-        // height: 50rem;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
         display: table;
         overflow: hidden;
         opacity: 0;
-        // we already had a transform so we should add them both in one
         transform: translate(-50%,-50%) scale(.5);
-        // has .2s transition delay
         transition: all .4s .2s;
     }
     &__left{
        width: 33.333333%; 
-    //    float: left;
-    //    faking a table
        display: table-cell;
     }
     &__right{
         width: 66.6666667%;
-        // float: left;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
@@ -63,24 +55,20 @@
         margin-bottom: 4rem;
 
 
-        // can use the property auto-prefixer in the future
-        // a new way of making columns css automatically balances the height of the columns
         -moz-column-count: 2;
         -moz-column-gap: 4rem;
         -moz-column-rule: 1px solid $color-grey-light-2;
         column-count: 2;
-        column-gap: 4rem; //1em = 14px; 1 em is for the current size
+        column-gap: 4rem; 
         column-rule: 1px solid $color-grey-light-2;
 
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
-        // to automatocally decide where to place the hyphens
         hyphens: auto;
 
     }
 
-    // popup becomes the target
     &:target &__content{
      opacity: 1;
      transform: translate(-50%,-50%) scale(1);

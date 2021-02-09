@@ -4,14 +4,11 @@
 @keyframes moveInBottom{
     0% {
     opacity : 0;
-    /* to animate in the x direction */
-    /* - means goes to the left */
     transform: translateY(3rem)
     }
 
     100%{
     opacity: 1;
-    /* looks like right now; the final state */
     transform: translateY(0)
     }
 }
@@ -20,9 +17,6 @@
 @keyframes moveInRight{
     0% {
     opacity : 0;
-    /* to animate in the x direction */
-    /* - means goes to the left */
-    /* can add this too ,rotate(-180deg) */
     transform: translateX(10rem)
     }
   
@@ -32,18 +26,13 @@
     }
     100%{
     opacity: 1;
-    /* looks like right now; the final state */
     transform: translate(0)
     }
 }
 
-
-/* opacity and transform can be used for animation */
 @keyframes moveInLeft{
     0% {
     opacity : 0;
-    /* to animate in the x direction */
-    /* - means goes to the left */
     transform: translateX(-10rem)
     }
     80%{
@@ -52,7 +41,6 @@
     }
     100%{
     opacity: 1;
-    /* looks like right now; the final state */
     transform: translate(0)
     }
 }
