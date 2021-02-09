@@ -7,3 +7,7 @@ Once you are done, open up the index.html file.
 ## About this project
 
 Natours operates as a sort of tour guide and information site for wilderness enthusiasts. 
+
+## Version 
+
+Branch "v1" is the most recent build.
