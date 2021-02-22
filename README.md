@@ -1,8 +1,14 @@
 # Natours
 
-To start this project hit "npm i" on your cli.
+To start this project hit: 
 
-Once you are done, open up the index.html file.
+```bash
+npm i -g live-server
+
+live-server
+```
+
+Once you are done, this will open up the index.html file.
 
 ## About this project
 
